@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="search-panel.css"/>
+
+<article>
+    <header>
+        <input id="search" type="search"
+               placeholder="Введите ключевые слова для поиска<Enter>"
+               maxlength="60" size="40" autofocus>
+        <label>
+            <input type="checkbox" id="useMorphology">Все формы слов
+        </label>
+        <label>
+            <input type="checkbox" id="useLat">С подстановкой латиницы
+        </label>
+        <label>
+            <input type="checkbox" id="useOnlyLat" disabled>Только варианты с латиницей
+        </label>
+    </header>
+
+    <div>
+        <div id="status">
+            <progress></progress>
+            <button>Отменить</button>
+        </div>
+        <div id="results">
+            <table>
+                <caption>РЕЗУЛЬТАТЫ<sup></sup></caption>
+                <thead>
+                    <tr>
+                        <th class="flush-left">Этап</th>
+                        <th class="flush-right">Цена</th>
+                        <th class="flush-left">Предмет</th>
+                        <th class="flush-left">Детали</th>
+                        <th class="flush-left">Организация</th>
+                        <th class="flush-left">Опубликовано</th>
+                        <th class="flush-left">Последнее событие</th>
+                        <th class="flush-left">Уведомления</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <input id="find" type="search" maxlength="60"
+               placeholder="Поиск в результатах" disabled>
+        <label>
+            <input type="checkbox"
+                   value="Подача заявок" checked disabled>Подача заявок
+        </label>
+        <label>
+            <input type="checkbox"
+                   value="Работа комиссии" checked disabled>Работа комиссии
+        </label>
+        <label>
+            <input type="checkbox"
+                   value="Размещение завершено" checked disabled>Размещение завершено
+        </label>
+        <label>
+            <input type="checkbox"
+                   value="Размещение отменено" checked disabled>Размещение отменено
+        </label>
+    </footer>
+</article>

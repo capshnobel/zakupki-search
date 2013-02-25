@@ -1,0 +1,37 @@
+{
+    "name": "zakupkipoisk",
+    "fullName": "Поиск по zakupki.gov.ru",
+    "description": "Поиск госзакупок с учетом подстановок латинцей",
+    "author": "cpt. Shnobel",
+    "license": "MPL 2.0",
+    "version": "0.1",
+    "id": "zakupkipoisk",
+    "preferences": [
+        {
+            "name": "panelWidth",
+            "title": "Ширина панели поиска",
+            "type": "integer",
+            "value": 900
+        },
+        {
+            "name": "panelHeight",
+            "type": "integer",
+            "value": 600,
+            "title": "Высота панели поиска"
+        },
+        {
+            "name": "scoutCount",
+            "type": "integer",
+            "value": 5,
+            "title": "Число поисковых бэкграунд-страниц",
+            "description": "Число рабочих страниц, осуществляющих поиск одновременно"
+        },
+        {
+            "name": "scoutTimeoutSecs",
+            "type": "integer",
+            "value": 60,
+            "title": "Тайм-аут поисковой страницы, секунд",
+            "description": "Сколько максимум секунд ждать ответа от поисковой страницы"
+        }
+    ]
+}

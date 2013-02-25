@@ -1,0 +1,115 @@
+body {
+    font: medium Calibri, Tachoma, Verdana, Liberation Sans, Sans Serif;
+}
+
+article {
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    right: .5em;
+    bottom: .5em;
+}
+
+header {
+    white-space: nowrap;
+    position: relative;
+}
+
+footer {
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+}
+
+article > header + div {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    right: 0;
+    bottom: 2em;
+    min-height: 10em;
+    min-width: 20em;
+}
+
+label {
+    font-size: x-small;
+    vertical-align: middle;
+}
+
+#results {
+    color: black;
+    background-color: white;
+    overflow: auto;
+    position: relative;
+    box-shadow: inset .1em .1em .2em .1em #aaaaaa;
+    height: 100%;
+    width: 100%;
+}
+
+#status {
+    white-space: nowrap;
+    position: absolute;
+    padding: .5em;
+    min-height: 1.5em;
+    min-width: 10em;
+    display: none;
+    top: -.5em;
+    background-color: lightcyan;
+    box-shadow: .1em .1em .2em .1em #aaaaaa;
+    z-index: 1;
+}
+
+#status progress {
+    vertical-align: middle;
+}
+#status button {
+    vertical-align: middle;
+}
+
+table {
+    margin-top: .5em;
+    width: 100%;
+}
+
+thead > tr {
+    background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr[data-filtertext="true"], tr[data-filterstage="true"] {
+    display: none;
+}
+
+th {
+    font-size: small;
+    padding: 0 .2em 0 0.2em;
+}
+
+td {
+    font-size: x-small;
+    vertical-align: top;
+}
+
+sup > span {
+    padding: .2em;
+    /*border: solid 1pt navy;*/
+    border-radius: 30%;
+    background-color: indianred;
+    color: snow;
+    font-size: 90%;
+}
+
+.flush-left {
+    text-align: left;
+}
+
+.flush-right {
+    text-align: right;
+}
+
+.template {
+    display: none;
+}
